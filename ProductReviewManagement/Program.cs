@@ -24,6 +24,7 @@ namespace ProductReviewManagement
             };
             Management management = new Management();
             management.TopThreeRecords(productReviewList);
+            management.SelectedRecords(productReviewList);
         }
     }
 }
