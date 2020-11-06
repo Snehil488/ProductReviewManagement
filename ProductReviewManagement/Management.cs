@@ -58,7 +58,7 @@ namespace ProductReviewManagement
         public void SelectIdAndReview(List<ProductReview> listProductReview)
         {
             var recordedData = (from reviews in listProductReview
-                                select "ProducId :"+reviews.ProductID + " Review :" + reviews.Review);
+                                select "ProductId :"+reviews.ProductID + " Review :" + reviews.Review);
             foreach(var item in recordedData)
             {
                 Console.WriteLine(item);
