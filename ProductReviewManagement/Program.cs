@@ -23,10 +23,10 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductID=11,UserID=1,Rating=3,Review="nice",IsLike=true}
             };
             Management management = new Management();
-            //management.TopThreeRecords(productReviewList);
-            //management.SelectedRecords(productReviewList);
-            //management.RetrieveCountOfRecords(productReviewList);
-            //management.RetreiveIdAndReview(productReviewList);
+            management.TopThreeRecords(productReviewList);
+            management.SelectedRecords(productReviewList);
+            management.RetrieveCountOfRecords(productReviewList);
+            management.RetreiveIdAndReview(productReviewList);
             management.SkipFiveRecords(productReviewList);
         }
     }
