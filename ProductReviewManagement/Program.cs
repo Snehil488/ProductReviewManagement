@@ -22,13 +22,8 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductID=10,UserID=1,Rating=8,Review="nice",IsLike=true},
                 new ProductReview(){ProductID=11,UserID=1,Rating=3,Review="nice",IsLike=true}
             };
-            Management management = new Management();
-            management.TopThreeRecords(productReviewList);
-            management.SelectedRecords(productReviewList);
-            management.RetrieveCountOfRecords(productReviewList);
-            management.RetreiveIdAndReview(productReviewList);
-            management.SkipFiveRecords(productReviewList);
-            management.SelectIdAndReview(productReviewList);
+            DataTableOperations dataTable = new DataTableOperations();
+            dataTable.CreateDataTable();
         }
     }
 }
