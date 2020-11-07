@@ -46,5 +46,15 @@ namespace ProductReviewManagement
                 Console.WriteLine("Prod Id :"+dataItem.ProductID + " Average Rating :" + dataItem.Average);
             }
         }
+        public void SelectRecordsWhereReviewIsNice()
+        {
+            var recordedList = from product in table.AsEnumerable()
+                               where product.Field<string>("Review").Equals("nice")
+                               select product;
+            foreach (var item in recordedList)
+            {
+                Console.WriteLine("ProductId :" + item.ItemArray[0] + " UserId :" + item.ItemArray[1] + " Rating :" + item.ItemArray[2] + " Review :" + item.ItemArray[3] + " IsLike :" + item.ItemArray[4]);
+            }
+        }
     }
 }
