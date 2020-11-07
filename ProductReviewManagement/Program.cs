@@ -24,6 +24,7 @@ namespace ProductReviewManagement
             };
             DataTableOperations dataTable = new DataTableOperations();
             dataTable.CreateDataTable();
+            dataTable.SelectRecordsWhereIsLikeIsTrue();
         }
     }
 }
